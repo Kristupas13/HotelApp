@@ -119,6 +119,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "HotelApp"
+    }
+  },
+  "defaultProject": "HotelApp",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
