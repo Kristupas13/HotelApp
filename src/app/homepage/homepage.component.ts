@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class HomepageComponent implements OnInit {
 
   constructor() { }
+  
+  public title: string = 'HotelApp';
+
 
   ngOnInit(): void {
   }
