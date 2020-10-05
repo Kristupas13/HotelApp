@@ -9,6 +9,8 @@ import { NavbarModule } from './navbar/navbar.module';
 import { HomepageModule } from './homepage/homepage.module';
 import { FooterModule } from './footer/footer.module';
 import { LoginModule } from './login/login.module';
+import { LoginRoutingModule } from './login/login-routing.module';
+import { HomepageRoutingModule } from './homepage/homepage-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { LoginModule } from './login/login.module';
     NavbarModule,
     HomepageModule,
     FooterModule,
-    LoginModule
+    LoginModule,
+    LoginRoutingModule,
+    HomepageRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

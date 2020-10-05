@@ -14,7 +14,14 @@ export class LoginComponent implements OnInit {
   public profileForm = new FormGroup({
     firstName: new FormControl(''),
     lastName: new FormControl(''),
-    userName: new FormControl('')
+    email: new FormControl(''),
+    userName: new FormControl(''),
+    password: new FormControl(''),
+    address: new FormControl(''),
+    address2: new FormControl(''),
+    city: new FormControl(''),
+    zip: new FormControl(''),
+    newsletters: new FormControl('')
   })
 
   ngOnInit(): void {
