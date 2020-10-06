@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomepageComponent } from './homepage.component';
 import { NavbarModule } from '../navbar/navbar.module';
 import { FooterModule } from '../footer/footer.module';
+import { HomepageRoutingModule } from './homepage-routing.module';
 
 
 
@@ -11,7 +12,8 @@ import { FooterModule } from '../footer/footer.module';
   imports: [
     CommonModule,
     NavbarModule,
-    FooterModule
+    FooterModule,
+    HomepageRoutingModule
   ],
   exports: [
     HomepageComponent

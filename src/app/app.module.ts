@@ -9,8 +9,7 @@ import { NavbarModule } from './navbar/navbar.module';
 import { HomepageModule } from './homepage/homepage.module';
 import { FooterModule } from './footer/footer.module';
 import { LoginModule } from './login/login.module';
-import { LoginRoutingModule } from './login/login-routing.module';
-import { HomepageRoutingModule } from './homepage/homepage-routing.module';
+import { RoomListModule } from './room-list/room-list.module';
 
 @NgModule({
   declarations: [
@@ -23,8 +22,7 @@ import { HomepageRoutingModule } from './homepage/homepage-routing.module';
     HomepageModule,
     FooterModule,
     LoginModule,
-    LoginRoutingModule,
-    HomepageRoutingModule
+    RoomListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
