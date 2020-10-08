@@ -12,7 +12,8 @@ export class NavbarComponent implements OnInit {
   @Input()
   public appTitle: string;
 
+  public roomIdentifier: number;
+
   ngOnInit(): void {
   }
-
 }

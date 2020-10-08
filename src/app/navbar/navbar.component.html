@@ -25,10 +25,9 @@
           </div>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Location" aria-label="Search">
-        <input class="form-control mr-sm-1" type="search" placeholder="Guests" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      <div class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-1" placeholder="Room identifier" [(ngModel)]="roomIdentifier">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" routerLink="rooms/{{roomIdentifier}}">Quick search</button>
+      </div>
     </div>
   </nav>

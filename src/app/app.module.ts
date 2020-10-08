@@ -9,7 +9,7 @@ import { NavbarModule } from './navbar/navbar.module';
 import { HomepageModule } from './homepage/homepage.module';
 import { FooterModule } from './footer/footer.module';
 import { LoginModule } from './login/login.module';
-import { RoomListModule } from './room-list/room-list.module';
+import { RoomsModule } from './rooms/rooms.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import { RoomListModule } from './room-list/room-list.module';
     HomepageModule,
     FooterModule,
     LoginModule,
-    RoomListModule
+    RoomsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
