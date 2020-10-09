@@ -6,25 +6,7 @@ import { RoomListComponent } from './room-list/room-list.component';
 const routes: Routes = [
     {
       path: 'rooms', 
-      component: RoomListComponent,
-      children: [
-        {
-          path: 'all',
-          component: RoomListComponent
-        },
-        {
-          path: 'one',
-          component: RoomListComponent
-        },
-        {
-          path: 'two',
-          component: RoomListComponent
-        },
-        {
-          path: 'four',
-          component: RoomListComponent
-        },
-      ]
+      component: RoomListComponent
     },
     {
       path: 'rooms',
