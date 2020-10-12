@@ -9,14 +9,8 @@ const routes: Routes = [
       component: RoomListComponent
     },
     {
-      path: 'rooms',
-      component: RoomDetailsComponent,
-      children: [
-        {
-          path: '**',
-          component: RoomDetailsComponent
-        }
-      ]
+      path: 'rooms/:roomId',
+      component: RoomDetailsComponent
     }
   ];
   

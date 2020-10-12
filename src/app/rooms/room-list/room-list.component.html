@@ -1,8 +1,25 @@
+<div class="container room-filters">
+    <form action="#" method="post" novalidate="novalidate">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-6 col-md-3 col-sm-12 p-0">
+                        <input type="text" class="form-control search-slt" [(ngModel)]="minimumRateValue" (ngModelChange)="test()" name="minimumRateValue" placeholder="Minimum rating">
+                    </div>
+                    <div class="col-lg-6 col-md-3 col-sm-12 p-0">
+                        <input type="text" class="form-control search-slt" [(ngModel)]="maximumPriceValue" (ngModelChange)="test()" name="maximumPriceValue" placeholder="Maximum price">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
             <div class="row">
-                <div *ngFor="let room of rooms" class="col-lg-4 col-md-6 mb-4">
+                <div *ngFor="let room of rooms | minimumRate: minimumRateValue | maximumPrice: maximumPriceValue" class="col-lg-4 col-md-6 mb-4">
                     <div class="card h-100">
                         <a routerLink="{{room.id}}"><img class="card-img-top" src="http://placehold.it/700x400"
                                 alt=""></a>

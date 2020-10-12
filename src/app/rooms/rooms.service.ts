@@ -1,40 +1,18 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RoomsService {
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) { }
 
-  public rooms = [
-    {
-      id: 0,
-      reservationPrice: 50,
-      title: 'pavadinimas',
-      description: 'Testas',
-      rating: 3
-    },
-    {
-      id: 1,
-      reservationPrice: 50,
-      title: 'pavadinimas',
-      description: 'Testas',
-      rating: 3
-    },
-    {
-      id: 2,
-      reservationPrice: 50,
-      title: 'pavadinimas',
-      description: 'Testas',
-      rating: 3
-    },
-    {
-      id: 3,
-      reservationPrice: 50,
-      title: 'pavadinimas',
-      description: 'Testas',
-      rating: 3
-    }
-  ];
+  public getRooms() {
+    return this.httpClient.get('https://localhost:44320/rooms');
+  }
+
+  public getRoomDetails(id: number) {
+    return this.httpClient.get(`https://localhost:44320/rooms/${id}`);
+  }
 }

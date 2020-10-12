@@ -1,9 +1,9 @@
 <div>
     <!-- Page Content -->
-    <div class="container">
+    <div class="container" *ngIf="room">
 
         <!-- Portfolio Item Heading -->
-        <h1 class="my-4" style="text-align: center;">title</h1>
+        <h1 class="my-4" style="text-align: center;">{{room.title}}</h1>
 
         <!-- Portfolio Item Row -->
         <div class="row">
@@ -13,12 +13,12 @@
                     <img class="img-fluid" src="http://placehold.it/500x300" alt="">
                 </a>
                 <h3 class="my-3">Description</h3>
-                <p>Description</p>
+                <p>{{room.description}}</p>
                 <h3 class="my-3">Room Details</h3>
                 <ul>
-                    <li><span>Reservation price </span><span style="font-weight: 800;">Reservation price</span></li>
-                    <li><span>Full price </span><span style="font-weight: 800;">$Full price</span></li>
-                    <li><span>Available </span><span style="font-weight: 800;">Available</span></li>
+                    <li><span>Reservation price </span><span style="font-weight: 800;">${{room.reservationPrice}}</span></li>
+                    <li><span>Full price </span><span style="font-weight: 800;">${{room.fullPrice}}</span></li>
+                    <li><span>Available </span><span style="font-weight: 800;">{{room.available}}</span></li>
                 </ul>
             </div>
             <div class="col-md-6">
