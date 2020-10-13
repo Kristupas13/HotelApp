@@ -18,7 +18,7 @@
                 <ul>
                     <li><span>Reservation price </span><span style="font-weight: 800;">${{room.reservationPrice}}</span></li>
                     <li><span>Full price </span><span style="font-weight: 800;">${{room.fullPrice}}</span></li>
-                    <li><span>Available </span><span style="font-weight: 800;">{{room.available}}</span></li>
+                    <li><span>Available </span><span style="font-weight: 800;">{{room.available | date: fullDate}}</span></li>
                 </ul>
             </div>
             <div class="col-md-6">

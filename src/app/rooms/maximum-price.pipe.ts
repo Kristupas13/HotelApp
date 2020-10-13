@@ -1,16 +1,17 @@
 import { Pipe, PipeTransform } from '@angular/core';
+import { Room } from './room';
 
 @Pipe({
   name: 'maximumPrice'
 })
 export class MaximumPricePipe implements PipeTransform {
 
-  transform(value: [], price?: number): [] {
+  transform(value: Room[], price?: number): Room[] {
 
     if (value && price) {
-      var transformedList: [] = [];
+      var transformedList: Room[] = [];
       value.forEach(cur => {
-        if (5 <= price) {
+        if (cur.fullPrice <= price) {
           transformedList.push(cur);
         }
       })

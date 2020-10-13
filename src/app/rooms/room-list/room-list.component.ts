@@ -30,7 +30,13 @@ export class RoomListComponent implements OnInit {
     });
   }
 
-  test(): void {
-    console.log('ye');
+  savePrice(): void {
+    this.store.dispatch(savePrice())
+    console.log('saved price');
+  }
+
+  saveRating(): void {
+    this.store.dispatch(saveRating())
+    console.log('saved rating');
   }
 }

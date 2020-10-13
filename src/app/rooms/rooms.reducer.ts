@@ -1,7 +1,7 @@
 import { createReducer, on } from '@ngrx/store';
 import { savePrice, saveRating } from './room.actions';
  
-export const initialState = 0;
+export const initialState = "";
  
 const _counterReducer = createReducer(
   initialState,
