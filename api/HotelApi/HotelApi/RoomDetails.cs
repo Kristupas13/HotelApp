@@ -2,7 +2,7 @@ using System;
 
 namespace HotelApi
 {
-  public class Room
+  public class RoomDetails
   {
     public int Id { get; set; }
     public string Title { get; set; }
@@ -11,5 +11,6 @@ namespace HotelApi
     public decimal FullPrice { get; set; }
     public DateTime Available { get; set; }
     public double Rating { get; set; }
+    public string ImageUrl { get; set; }
   }
 }

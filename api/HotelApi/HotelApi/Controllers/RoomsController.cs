@@ -17,14 +17,14 @@ namespace HotelApi.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Room> Get()
+        public IEnumerable<RoomDetails> Get()
         {
             return RoomList.Rooms;
         }
 
         [HttpGet]
         [Route("{id}")]
-        public Room Get(int id)
+        public RoomDetails Get(int id)
         {
             return RoomList.Rooms.SingleOrDefault(x => x.Id == id);
         }

@@ -1,5 +1,5 @@
 import { MaximumPricePipe } from './maximum-price.pipe';
-import { Room } from './room';
+import { Room } from '../room';
 
 describe('MaximumPricePipe', () => {
   const pipe = new MaximumPricePipe();

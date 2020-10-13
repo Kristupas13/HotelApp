@@ -1,6 +1,9 @@
-<div class="container room-list">
+<div class="container-fluid room-list">
     <div class="row">
-        <div class="col-lg-2">
+        <div class="col-lg-1">
+            
+        </div>
+        <div class="col-lg-1">
             <form action="#" method="post" novalidate="novalidate">
                 <div class="row">
                     <div class="col-lg-12">
@@ -18,13 +21,13 @@
                 </div>
             </form>
         </div>
-        <div class="col-lg-10">
+        <div class="col-lg-8">
             <div class="row">
                 <div *ngFor="let room of rooms | minimumRate: minimumRateValue | maximumPrice: maximumPriceValue"
                     class="col-lg-4 col-md-6 mb-4">
                     <div class="card h-100">
-                        <a routerLink="{{room.id}}"><img class="card-img-top" src="http://placehold.it/700x400"
-                                alt=""></a>
+                        <a routerLink="{{room.id}}"><img class="card-img-top" src="{{room.imageUrl}}"
+                                alt="http://placehold.it/700x400"></a>
                         <div class="card-body">
                             <h4 class="card-title">
                                 <a routerLink="{{room.id}}" routerLinkActive="active" class="nav-link"

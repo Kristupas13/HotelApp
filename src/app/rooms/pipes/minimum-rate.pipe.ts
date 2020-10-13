@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Room } from './room';
+import { Room } from '../room';
 
 @Pipe({
   name: 'minimumRate'

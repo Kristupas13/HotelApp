@@ -1,8 +1,4 @@
 export class Room {
-    constructor(rating?: number) {
-        this.rating = rating;
-    }
-    
     public id: number;
     public title: string;
     public description: string;
@@ -10,4 +6,5 @@ export class Room {
     public fullPrice: number;
     public available: string;
     public rating: number;
+    public imageUrl: string;
 }
